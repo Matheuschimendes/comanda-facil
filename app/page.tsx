@@ -59,7 +59,7 @@ const Home = async () => {
           <SidebarHeader />
           <SidebarContent>
             <SidebarGroup />
-            <SidebarGroupLabel> ola
+            <SidebarGroupLabel>
               <Image
                 src="/logo.svg"
                 width={173}
