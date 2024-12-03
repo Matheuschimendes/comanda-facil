@@ -72,7 +72,7 @@ const data = {
       ],
     },
     {
-      title: "Models",
+      title: "Mesas",
       url: "#",
       icon: Bot,
       items: [
@@ -91,7 +91,7 @@ const data = {
       ],
     },
     {
-      title: "Documentation",
+      title: "Notas",
       url: "#",
       icon: BookOpen,
       items: [
@@ -114,24 +114,24 @@ const data = {
       ],
     },
     {
-      title: "Settings",
+      title: "Configurações",
       url: "#",
       icon: Settings2,
       items: [
         {
-          title: "General",
+          title: "Geral",
           url: "#",
         },
         {
-          title: "Team",
+          title: "Carços",
           url: "#",
         },
         {
-          title: "Billing",
+          title: "Cobrança",
           url: "#",
         },
         {
-          title: "Limits",
+          title: "Mesas",
           url: "#",
         },
       ],
