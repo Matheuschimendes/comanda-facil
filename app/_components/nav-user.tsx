@@ -1,5 +1,6 @@
 "use client";
 
+import {} from "@/app/_components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -7,7 +8,11 @@ import {
 import { SidebarMenu, SidebarMenuItem } from "@/app/_components/ui/sidebar";
 import { UserButton } from "@clerk/nextjs";
 
-export function NavUser({}: {
+export function NavUser({
+  // isSidebarOpen,
+  
+}: {
+  isSidebarOpen: boolean; // Estado que indica se a sidebar está aberta
   user: {
     name: string;
     email: string;
@@ -19,9 +24,16 @@ export function NavUser({}: {
       <SidebarMenuItem>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <div>
-              <UserButton showName />
-            </div>
+            <UserButton
+              // appearance={{
+              //   elements: {
+              //     userButtonBox: {
+              //       flexDirection: "row-reverse",
+              //     },
+              //   },
+              // }}
+              // showName
+            />
           </DropdownMenuTrigger>
         </DropdownMenu>
       </SidebarMenuItem>
