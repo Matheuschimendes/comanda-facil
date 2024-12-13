@@ -1,37 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+---
 
-First, run the development server:
+# Comanda Fácil
+
+Comanda Fácil é um sistema de gerenciamento de pedidos de um restaurante, desenvolvido para facilitar a visualização e controle de comandas. O projeto oferece uma interface limpa e fácil de usar para gerenciar pedidos, visualizar o status dos pedidos e acompanhar o tempo restante de cada item no pedido.
+
+## Funcionalidades
+
+- **Visualização de Pedidos**: Lista os pedidos em tempo real com informações detalhadas.
+- **Gerenciamento de Status de Pedidos**: Acompanhamento do status de cada pedido (pendente, preparando, pronto).
+- **Contagem de Tempo**: Mostra o tempo restante para a finalização de cada pedido.
+- **Interface Responsiva**: Design adaptável para dispositivos móveis e desktops.
+- **Sidebar Interativa**: Menu lateral com links de navegação para fácil acesso aos recursos.
+
+
+<img width="1439" alt="photo" src="./public/bg.jpg">
+
+## Tecnologias Utilizadas
+
+- **Frontend**:
+  - React (Next.js)
+  - Tailwind CSS
+  - TypeScript
+  - Zustand para gerenciamento de estado
+- **Backend**:
+  - (Caso o backend seja necessário, adicione a tecnologia aqui, por exemplo, Node.js, Express, etc.)
+- **Outras ferramentas**:
+  - Vercel (Deploy)
+  - Axios (Para requisições HTTP, caso necessário)
+
+## Instalação
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/comanda-facil.git
+```
+
+### 2. Instale as dependências
+
+Navegue até a pasta do projeto e instale as dependências:
+
+```bash
+cd comanda-facil
+npm install
+```
+
+### 3. Execute o projeto
+
+Para rodar o projeto localmente, use o comando abaixo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Isso iniciará o servidor de desenvolvimento e você poderá acessar a aplicação em `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+comanda-facil/
+├── app/                  # Componentes e páginas principais do projeto
+│   ├── _components/      # Componentes reutilizáveis
+│   ├── comandas/         # Página de visualização das comandas
+│   └── _components/ui/   # Componentes da interface (botões, listas, etc.)
+├── public/               # Arquivos estáticos (imagens, fontes, etc.)
+├── styles/               # Arquivos de estilo
+├── types/                # Definições de tipos do TypeScript
+├── next.config.js        # Configuração do Next.js
+└── package.json          # Dependências e scripts
+```
 
-## Learn More
+### Detalhes dos Componentes
 
-To learn more about Next.js, take a look at the following resources:
+- **AppSidebar**: Menu lateral com navegação entre diferentes partes do sistema.
+- **Comandas**: Exibe a lista de pedidos com detalhes e status.
+- **OrderList**: Lista de pedidos a serem processados.
+- **OrderDetails**: Exibe detalhes específicos sobre um pedido.
+- **OrderCard**: Cartão que representa um pedido individual.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contribuindo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contribuições são bem-vindas! Se você deseja contribuir para o projeto, siga as etapas abaixo:
 
-## Deploy on Vercel
+1. Fork o repositório.
+2. Crie uma nova branch (`git checkout -b feature/nova-feature`).
+3. Faça as modificações necessárias e commit suas mudanças.
+4. Envie um Pull Request explicando suas mudanças.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Testes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# comanda-facil
+Para rodar os testes do projeto (caso você tenha configurado testes automatizados, como Jest, Testing Library, etc.), utilize o seguinte comando:
+
+```bash
+npm test
+```
+
+## Deploy
+
+Para deploy do projeto, você pode utilizar a Vercel ou outro provedor de sua preferência. Basta conectar seu repositório ao serviço e ele cuidará do deploy automaticamente.
+
+## Licença
+
+Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Este README cobre as informações básicas sobre o seu projeto "Comanda Fácil". Você pode ajustá-lo de acordo com o seu fluxo de trabalho, outras funcionalidades que você tenha implementado, ou tecnologias que esteja utilizando.
