@@ -91,7 +91,7 @@ const data = {
       ],
     },
     {
-      title: "Notas",
+      title: "Comandas",
       url: "#",
       icon: BookOpen,
       items: [
