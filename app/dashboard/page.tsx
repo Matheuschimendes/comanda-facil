@@ -13,6 +13,7 @@ import { Separator } from "@/app/_components/ui/separator";
 import { SidebarProvider, SidebarTrigger } from "@/app/_components/ui/sidebar";
 
 import Comandas from "@/app/comandas/comandas";
+import ProdutosPage from "@/app/pages/produtos";
 
 export default function Page() {
   return (
@@ -52,6 +53,8 @@ export default function Page() {
             </div>
 
             <Comandas />
+            <ProdutosPage/>
+            
           </main>
         </div>
       </div>
